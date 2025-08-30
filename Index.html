@@ -1,0 +1,241 @@
+<!-- First I use the basic HTML structure in my file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Reyes - Portfolio</title>
+    <meta name="description" content="Personal portfolio of Samuel Reyes as a Riwi developer">
+     <!-- I add a CSS file to change the portfolio layout -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Game Button -->
+    <a href="./game-main/index.html" class="game-button" title="Play Game">💀</a>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/MYPROJECTS.png">
+</head>
+<body>
+    <!--I define the document header-->
+    <!-- Inside the <body>, add a main title with <h1> that contains my name -->
+    <header>
+        <h1>Samuel Reyes</h1>
+        <p class="subtitle">Riwi Developer</p>
+        <nav class="main-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- I define the main content of the document -->
+    <main class="content">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <!-- Add a profile picture using the <img> tag with the src, alt, and width attributes -->
+                <img src="img/portfolio_image.jpeg" 
+                     alt="Samuel Reyes's photo" 
+                     class="profile-pic">
+                <div class="intro">
+                    <p>Hi, I'm <span class="highlight">Samuel Reyes</span>, a 19-year-old software developer passionate about programming and learning new technologies.</p>
+                    <p>I love exploring different programming languages and creating innovative solutions through code.</p>
+                </div>
+            </div>
+        </section>
+
+         <!-- section to difine a section of related content in the document -->
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                     <!-- I use an unordered list <ul> to list my technical skills -->
+                    <ul>
+                        <li>Native Spanish</li>
+                        <li>English (B1)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Technologies</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- I create a <section> section with an <h2> heading for my projects. Inside, I add a <h3> title and a brief description for each one. -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <article class="project">
+                    <!-- I add an image that represents one of my projects using the <img> tag -->
+                    <img src="img/MYPROJECTS.png" alt="Project portfolio" class="project-img">
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>This is my first project where I built a personal portfolio using only HTML.</p>
+                        <p>Through this project, I learned the fundamentals of web structure and semantic HTML.</p>
+                        <!-- I add <a> links to my social media profiles using target="_blank": -->
+                        <a href="https://github.com/reyesuwu461" class="project-link" target="_blank">
+                            View on GitHub <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="project">
+                    <img src= "img/python_uses.png" alt="Python application" class="project-img"> 
+                    <div class="project-info">
+                        <h3>Python Data Analyzer</h3>
+                        <p>A Python application that processes and visualizes data from various sources.</p>
+                        <p>Implemented pan<a href="/game-main/index.html" class="game-button" title="Play Game">💀</a>das and matplotlib for data manipulation and visualization.</p>
+                        <a href="#" class="project-link" target="_blank">
+                            View on GitHub <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="project">
+                    <img src="img/Use-of-JavaScript.png" alt="JavaScript uses" class="project-img">
+                    <div class="project-info">
+                        <h3>JavaScript Memory Game</h3>
+                        <p>A browser-based memory card game built with vanilla JavaScript.</p>
+                        <p>Features score tracking, timer, and multiple difficulty levels.</p>
+                        <a href="#" class="project-link" target="_blank">
+                            View on GitHub <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Agrega esta sección después de la sección de proyectos existente -->
+<section class="project-example">
+    <div class="example-header">
+        <h2>The Reaper Lurks</h2>
+        <p>An interactive loading animation with dark theme and progress indicator</p>
+    </div>
+    
+    <div class="example-container">
+        <div class="example-description">
+            <h3>Project Overview</h3>
+            <p>This project features a sophisticated loading animation with a reaper character, flame effects, and an animated progress bar. The design uses SVG graphics with CSS animations and JavaScript interactivity to create an engaging user experience.</p>
+            
+            <div class="tech-used">
+                <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-tag"><i class="fas fa-paint-brush"></i> SVG Graphics</span>
+            </div>
+        </div>
+        
+        <div class="example-view">
+            <!-- Iframe que muestra la pantalla de carga -->
+            <iframe 
+                src="/login-screen-main/index.html"
+                width="100%" 
+                height="500" 
+                frameborder="0"
+                allowfullscreen
+                title="The Reaper Lurks Loading Animation"
+                class="game-iframe">
+            </iframe>
+        </div>
+        
+        <div class="example-actions">
+            <a href="Index.html" class="btn" target="_blank">
+                <i class="fas fa-external-link-alt"></i> View Fullscreen
+            </a>
+            <a href="https://github.com/reyesuwu461" class="btn" target="_blank">
+                <i class="fab fa-github"></i> View Code
+            </a>
+        </div>
+    </div>
+</section>
+
+        <!-- I create a contact section and add a <form> that allows visitors to contact me. -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <form action="/send" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                
+                <div class="social-links">
+                    <h3>Find me on:</h3>
+                    <a href="https://github.com/reyesuwu461" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="#" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="#" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+            <div class="toggle-container">
+                <input id="switch" type="checkbox">
+                <label for="switch">
+                    <span class="toggle"></span>
+                    <span class="names">
+                        <span class="light">☀️</span>
+                        <span class="dark">🌙</span>
+                    </span>
+                </label>
+            </div>
+
+    <div class="container">
+        <h1>Light/Dark Mode</h1>
+        <div class="content-box">
+            <p>This page demonstrates a beautiful light/dark mode toggle switch. Click the toggle in the top right corner to change the theme.</p>
+        </div>
+    </div>
+
+    <!-- I define the footer of the document -->
+    <footer>
+        <!-- I create a navigation menu <nav> with internal links to my portfolio sections -->
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2025 Samuel Reyes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
